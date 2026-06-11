@@ -1,22 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Paid Ads">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C2340"/>
-      <stop offset="100%" stop-color="#163A5F"/>
+    <linearGradient id="bg-ppc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDF6FF"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D6E8F7"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#14B8A6"/>
-      <stop offset="100%" stop-color="#C9A227"/>
+    <linearGradient id="plate-ppc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078C1"/>
+      <stop offset="100%" stop-color="#0C2340"/>
     </linearGradient>
+    <filter id="shadow-ppc" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0C2340" flood-opacity="0.12"/>
+    </filter>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="1320" cy="180" r="220" fill="#14B8A6" opacity="0.12"/>
-  <circle cx="220" cy="720" r="280" fill="#C9A227" opacity="0.08"/>
-  <rect x="120" y="140" width="520" height="12" rx="6" fill="url(#accent)" opacity="0.9"/>
-  <text x="120" y="260" fill="#FAFBFC" font-family="Georgia, serif" font-size="72" font-weight="700">Paid Ads</text>
-  <text x="120" y="340" fill="#F0F4F8" font-family="Arial, sans-serif" font-size="34" opacity="0.9">Performance media</text>
-  <g transform="translate(980, 320)" fill="none" stroke="#14B8A6" stroke-width="4" opacity="0.85">
-    <rect x="30" y="60" width="300" height="40" rx="8"/><rect x="30" y="120" width="220" height="24" rx="6" opacity="0.5"/><rect x="30" y="160" width="260" height="24" rx="6" opacity="0.35"/><rect x="30" y="200" width="180" height="24" rx="6" opacity="0.25"/>
+  <rect width="400" height="400" fill="url(#bg-ppc)"/>
+  <circle cx="350" cy="55" r="70" fill="#0078C1" opacity="0.09"/>
+  <circle cx="45" cy="355" r="90" fill="#0C2340" opacity="0.08"/>
+  <circle cx="320" cy="330" r="40" fill="#C9A227" opacity="0.12"/>
+  <g filter="url(#shadow-ppc)">
+    <rect x="108" y="108" width="184" height="184" rx="44" fill="#FFFFFF"/>
+    <rect x="118" y="118" width="164" height="164" rx="38" fill="url(#plate-ppc)" opacity="0.14"/>
   </g>
-  <rect x="120" y="760" width="360" height="8" rx="4" fill="#C9A227" opacity="0.55"/>
+  <g transform="translate(200, 200)"><g fill="#0078C1"><path d="M-54-18h108v24H-54z" rx="8"/><rect x="-54" y="16" width="72" height="12" rx="6" opacity="0.45"/><rect x="-54" y="36" width="88" height="12" rx="6" opacity="0.3"/><rect x="-54" y="56" width="60" height="12" rx="6" opacity="0.2"/><circle cx="42" cy="0" r="14" fill="#C9A227"/></g></g>
 </svg>

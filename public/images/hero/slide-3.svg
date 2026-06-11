@@ -1,22 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Brand">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-hero-3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0C2340"/>
       <stop offset="100%" stop-color="#163A5F"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#14B8A6"/>
-      <stop offset="100%" stop-color="#C9A227"/>
+    <linearGradient id="accent-hero-3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="1320" cy="180" r="220" fill="#14B8A6" opacity="0.12"/>
-  <circle cx="220" cy="720" r="280" fill="#C9A227" opacity="0.08"/>
-  <rect x="120" y="140" width="520" height="12" rx="6" fill="url(#accent)" opacity="0.9"/>
-  <text x="120" y="260" fill="#FAFBFC" font-family="Georgia, serif" font-size="72" font-weight="700">Brand</text>
-  <text x="120" y="340" fill="#F0F4F8" font-family="Arial, sans-serif" font-size="34" opacity="0.9">Presence that converts</text>
-  <g transform="translate(980, 320)" fill="none" stroke="#14B8A6" stroke-width="4" opacity="0.85">
-    <rect x="30" y="40" width="300" height="180" rx="16"/><path d="M80 170l70-90 50 60 40-50 70 80"/>
-  </g>
-  <rect x="120" y="760" width="360" height="8" rx="4" fill="#C9A227" opacity="0.55"/>
+  <rect width="1600" height="900" fill="url(#bg-hero-3)"/>
+  <circle cx="1280" cy="200" r="240" fill="#C9A227" opacity="0.1"/>
+  <circle cx="240" cy="700" r="300" fill="#C9A227" opacity="0.07"/>
+  <rect x="120" y="140" width="480" height="10" rx="5" fill="url(#accent-hero-3)"/>
+  <text x="120" y="270" fill="#FFFFFF" font-family="Georgia, serif" font-size="76" font-weight="700">Brand</text>
+  <text x="120" y="350" fill="#F0F4F8" font-family="Arial, sans-serif" font-size="32">Presence that converts</text>
+  <g transform="translate(1080, 280)"><g><circle cx="-28" cy="-8" r="30" fill="#0078C1" opacity="0.85"/><circle cx="22" cy="-18" r="22" fill="#14B8A6" opacity="0.75"/><circle cx="8" cy="24" r="18" fill="#C9A227" opacity="0.8"/></g></g>
+  <rect x="120" y="760" width="320" height="8" rx="4" fill="#C9A227" opacity="0.5"/>
 </svg>

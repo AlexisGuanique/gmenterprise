@@ -1,22 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Strategy">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-hero-2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0C2340"/>
       <stop offset="100%" stop-color="#163A5F"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#C9A227"/>
-      <stop offset="100%" stop-color="#C9A227"/>
+    <linearGradient id="accent-hero-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="1320" cy="180" r="220" fill="#C9A227" opacity="0.12"/>
-  <circle cx="220" cy="720" r="280" fill="#C9A227" opacity="0.08"/>
-  <rect x="120" y="140" width="520" height="12" rx="6" fill="url(#accent)" opacity="0.9"/>
-  <text x="120" y="260" fill="#FAFBFC" font-family="Georgia, serif" font-size="72" font-weight="700">Strategy</text>
-  <text x="120" y="340" fill="#F0F4F8" font-family="Arial, sans-serif" font-size="34" opacity="0.9">Campaigns that scale</text>
-  <g transform="translate(980, 320)" fill="none" stroke="#C9A227" stroke-width="4" opacity="0.85">
-    <circle cx="160" cy="70" r="48"/><path d="M60 200c20-56 220-56 200 0"/><circle cx="70" cy="110" r="34"/><circle cx="250" cy="110" r="34"/>
-  </g>
-  <rect x="120" y="760" width="360" height="8" rx="4" fill="#C9A227" opacity="0.55"/>
+  <rect width="1600" height="900" fill="url(#bg-hero-2)"/>
+  <circle cx="1280" cy="200" r="240" fill="#14B8A6" opacity="0.1"/>
+  <circle cx="240" cy="700" r="300" fill="#C9A227" opacity="0.07"/>
+  <rect x="120" y="140" width="480" height="10" rx="5" fill="url(#accent-hero-2)"/>
+  <text x="120" y="270" fill="#FFFFFF" font-family="Georgia, serif" font-size="76" font-weight="700">Strategy</text>
+  <text x="120" y="350" fill="#F0F4F8" font-family="Arial, sans-serif" font-size="32">Campaigns that scale</text>
+  <g transform="translate(1080, 280)"><g fill="#0078C1"><circle cx="0" cy="-24" r="22"/><path d="M-48 38c8-28 88-28 96 0" opacity="0.9"/><circle cx="-34" cy="2" r="16" opacity="0.55"/><circle cx="34" cy="2" r="16" opacity="0.55"/></g></g>
+  <rect x="120" y="760" width="320" height="8" rx="4" fill="#C9A227" opacity="0.5"/>
 </svg>
