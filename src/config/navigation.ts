@@ -38,12 +38,12 @@ export const footerQuickLinks: FooterLink[] = [
   { label: "Contact", path: "/contact" },
 ];
 
-/** Enlaces legales del footer */
+/** Enlaces legales del footer — requeridos para cumplimiento Square */
 export const footerLegalLinks: FooterLink[] = [
-  { label: "Shipping Policy", path: "/refund-policy" },
-  { label: "Refund & Return Policy", path: "/refund-policy" },
+  { label: "Terms of Service", path: "/term-of-services" },
   { label: "Privacy Policy", path: "/privacy-policy" },
-  { label: "Terms & Conditions", path: "/term-of-services" },
+  { label: "Refund Policy", path: "/refund-policy" },
+  { label: "Cookie Policy", path: "/cookie-policy" },
 ];
 
 export function getNav(locale: Locale): NavItem[] {

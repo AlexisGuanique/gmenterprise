@@ -22,7 +22,7 @@ export function PricingFAQSection() {
                   aria-expanded={isOpen}
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
-                  <span>{item.question}</span>
+                  <span className="faq-section__question">{item.question}</span>
                   <span
                     className={`faq-section__icon ${isOpen ? "faq-section__icon--open" : ""}`}
                     aria-hidden

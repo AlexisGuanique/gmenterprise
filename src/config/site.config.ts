@@ -12,20 +12,22 @@ export const siteConfig = {
 
   email: "hello@gmenterprise.com",
   supportEmail: "support@gmenterprise.com",
-  phone: "+1 (555) 123-4567",
+  phone: "+1 (512) 717-2375",
 
   address: {
-    street: "123 Marketing Avenue",
-    suite: "Suite 200, Miami, FL 33101",
+    street: "4701 Staggerbrush Rd",
+    suite: "Austin, TX 78749",
     country: "United States",
+    mapEmbedUrl:
+      "https://www.google.com/maps?q=4701+Staggerbrush+Rd,+Austin,+TX+78749&output=embed",
   },
 
-  operatingHours: "Monday–Friday, 9:00 AM – 6:00 PM Eastern Time (ET)",
+  operatingHours: "Monday–Friday, 9:00 AM – 6:00 PM Central Time (CT)",
 
   disclaimer:
-    "Information on this website is for general purposes only and does not constitute legal, financial, or professional advice.",
+    "Information on this website is for general purposes only. It does not constitute legal, financial, or professional advice.",
 
-  copyright: "GM Enterprise LLC © 2026. All rights reserved.",
+  copyright: "Copyright © 2026 GM Enterprise LLC. All rights reserved.",
 
   credit: {
     label: "Developed by GM Enterprise",
