@@ -326,7 +326,7 @@ export const blogContent = {
       description: "How to improve response times and customer satisfaction",
       status: "Coming Soon",
       image: {
-        src: "https://images.unsplash.com/photo-1521737711862-e3b97375f902?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80",
         alt: "Customer support team",
       },
     },

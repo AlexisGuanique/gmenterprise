@@ -84,7 +84,7 @@ export const marketingHomeContent = {
       cta: "Shop now",
       href: "/pricing",
       image:
-        "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
       alt: "SEO and content marketing",
       variant: "large" as const,
     },
@@ -95,7 +95,7 @@ export const marketingHomeContent = {
       cta: "Shop Now",
       href: "/pricing",
       image:
-        "https://images.unsplash.com/photo-1611162617474-5b21e939e113?w=800&q=80",
+        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&q=80",
       alt: "Social media marketing",
       variant: "small" as const,
     },
@@ -143,7 +143,7 @@ export const marketingHomeContent = {
         name: "Complete SEO Audit Package",
         price: "$499",
         image:
-          "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=600&q=80",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
         alt: "SEO audit service",
         href: "/pricing",
       },
@@ -203,7 +203,7 @@ export const marketingHomeContent = {
         name: "Content Strategy Blueprint",
         price: "$449",
         image:
-          "https://images.unsplash.com/photo-1456324502043-aa73b6a94366?w=600&q=80",
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
         alt: "Content strategy",
         href: "/pricing",
       },
@@ -266,7 +266,7 @@ export const marketingHomeContent = {
         name: "Online Reputation Management",
         price: "$349/mo",
         image:
-          "https://images.unsplash.com/photo-1521737711862-e3b97375f902?w=600&q=80",
+          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80",
         alt: "Reputation management",
         href: "/pricing",
       },
@@ -330,7 +330,7 @@ export const marketingHomeContent = {
         id: "seo",
         label: "SEO",
         image:
-          "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=400&q=80",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80",
         alt: "SEO services",
         href: "/pricing",
       },
@@ -338,7 +338,7 @@ export const marketingHomeContent = {
         id: "social",
         label: "Social Media",
         image:
-          "https://images.unsplash.com/photo-1611162617474-5b21e939e113?w=400&q=80",
+          "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&q=80",
         alt: "Social media",
         href: "/pricing",
       },

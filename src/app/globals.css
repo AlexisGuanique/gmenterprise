@@ -2389,6 +2389,22 @@ h6 {
   background: var(--brz-white);
 }
 
+@media (min-width: 1024px) {
+  .store-header__toggle,
+  .store-header__mobile {
+    display: none !important;
+  }
+
+  .store-header__nav,
+  .store-header__actions {
+    display: flex !important;
+  }
+
+  .mobile-bottom-nav {
+    display: none !important;
+  }
+}
+
 .nav-link--store {
   color: var(--brz-black);
   font-weight: 500;
