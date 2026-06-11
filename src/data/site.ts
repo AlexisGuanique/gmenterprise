@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/locales";
+import { siteImages } from "@/config/images";
 
 export { siteConfig } from "@/config/site.config";
 export { getNav } from "@/config/navigation";
@@ -85,15 +86,15 @@ export const homeContent = {
       "We help businesses streamline operations, improve customer engagement, and grow with structured systems and expert guidance.",
     carousel: [
       {
-        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        src: siteImages.sections.carousel1,
         alt: "Business analytics dashboard on laptop",
       },
       {
-        src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+        src: siteImages.sections.carousel2,
         alt: "Team collaborating in modern office",
       },
       {
-        src: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80",
+        src: siteImages.sections.carousel3,
         alt: "Professional meeting with growth charts",
       },
     ],
@@ -122,7 +123,7 @@ export const homeContent = {
     ],
     closing: "Let us lead the way.",
     image: {
-      src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+      src: siteImages.sections.elevate,
       alt: "Professional team working together",
     },
   },
@@ -136,7 +137,7 @@ export const homeContent = {
       "Operational efficiency",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
+      src: siteImages.sections.partner,
       alt: "Business professionals in meeting",
     },
   },
@@ -183,19 +184,19 @@ export const aboutContent = {
     },
     stats: [
       {
-        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80",
+        image: siteImages.about.stat1,
         alt: "+250 clients",
       },
       {
-        image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80",
+        image: siteImages.about.stat2,
         alt: "Automated workflows",
       },
       {
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80",
+        image: siteImages.about.stat3,
         alt: "Global reach",
       },
       {
-        image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&q=80",
+        image: siteImages.about.stat4,
         alt: "Tailored solutions",
       },
     ] satisfies AboutStatCircle[],
@@ -242,7 +243,7 @@ export const aboutContent = {
       "Take your operations to the next level. Whether you want to scale, streamline, or stay ahead, our experts guide you every step of the way.",
     cta: "Get started",
     image: {
-      src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      src: siteImages.sections.fullService,
       alt: "Modern office workspace",
       width: 508,
       height: 283,
@@ -306,7 +307,7 @@ export const blogContent = {
       title: "Getting Started with Your Growth Strategy",
       status: "Coming Soon",
       image: {
-        src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+        src: siteImages.blog.post1,
         alt: "Planning and strategy session",
       },
     },
@@ -316,7 +317,7 @@ export const blogContent = {
       description: "Understanding workflow automation for small teams",
       status: "Coming Soon",
       image: {
-        src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80",
+        src: siteImages.blog.post2,
         alt: "Team working on laptops",
       },
     },
@@ -326,7 +327,7 @@ export const blogContent = {
       description: "How to improve response times and customer satisfaction",
       status: "Coming Soon",
       image: {
-        src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80",
+        src: siteImages.blog.post3,
         alt: "Customer support team",
       },
     },

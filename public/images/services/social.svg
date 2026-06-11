@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Social">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C2340"/>
+      <stop offset="100%" stop-color="#163A5F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="180" r="220" fill="#C9A227" opacity="0.12"/>
+  <circle cx="220" cy="720" r="280" fill="#C9A227" opacity="0.08"/>
+  <rect x="120" y="140" width="520" height="12" rx="6" fill="url(#accent)" opacity="0.9"/>
+  <text x="120" y="260" fill="#FAFBFC" font-family="Georgia, serif" font-size="72" font-weight="700">Social</text>
+  <text x="120" y="340" fill="#F0F4F8" font-family="Arial, sans-serif" font-size="34" opacity="0.9">Community growth</text>
+  <g transform="translate(980, 320)" fill="none" stroke="#C9A227" stroke-width="4" opacity="0.85">
+    <rect x="40" y="50" width="280" height="170" rx="20"/><circle cx="110" cy="120" r="24"/><path d="M170 95h90M170 125h70M170 155h50"/>
+  </g>
+  <rect x="120" y="760" width="360" height="8" rx="4" fill="#C9A227" opacity="0.55"/>
+</svg>

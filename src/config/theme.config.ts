@@ -8,16 +8,16 @@ import {
  * Cambia este valor al clonar el template para un cliente.
  * Opciones: "default" | "epoint-ai" | "db-studio" | "ocean"
  */
-export const activeThemePreset: ThemePresetId = "marketing-pro";
+export const activeThemePreset: ThemePresetId = "gmenterprise";
 
 const preset = getThemePreset(activeThemePreset);
 
 export const themeColors = preset.colors;
 
 export const themeFonts = {
-  body: "Lato",
-  heading: "Poppins",
-  accent: "Sora",
+  body: "Plus Jakarta Sans",
+  heading: "Instrument Serif",
+  accent: "Plus Jakarta Sans",
 } as const;
 
 export function getActiveThemeVariables() {

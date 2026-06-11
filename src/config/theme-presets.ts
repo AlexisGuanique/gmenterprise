@@ -3,7 +3,8 @@ export type ThemePresetId =
   | "epoint-ai"
   | "db-studio"
   | "ocean"
-  | "marketing-pro";
+  | "marketing-pro"
+  | "gmenterprise";
 
 export type ThemePresetColors = {
   /** Solo fondos, bordes y decoración — no usar en texto */
@@ -130,6 +131,26 @@ export const themePresets = {
       heroOverlay: "rgba(17, 17, 17, 0.55)",
       primaryRgb: "17, 17, 17",
       accentRgb: "255, 184, 0",
+    },
+  },
+
+  gmenterprise: {
+    id: "gmenterprise",
+    label: "GM Enterprise",
+    description: "Azul marino profundo con teal y dorado refinado",
+    colors: {
+      gold: "#C9A227",
+      primaryBright: "#14B8A6",
+      primaryDark: "#0C2340",
+      white: "#FAFBFC",
+      black: "#0F172A",
+      grayLight: "#F0F4F8",
+      grayMuted: "#64748B",
+      grayBorder: "#DCE3EC",
+      grayDark: "#334155",
+      heroOverlay: "rgba(12, 35, 64, 0.62)",
+      primaryRgb: "12, 35, 64",
+      accentRgb: "201, 162, 39",
     },
   },
 } as const satisfies Record<ThemePresetId, ThemePreset>;

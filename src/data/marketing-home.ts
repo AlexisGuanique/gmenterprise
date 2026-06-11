@@ -1,3 +1,5 @@
+import { siteImages } from "@/config/images";
+
 export type MarketingService = {
   id: string;
   name: string;
@@ -43,8 +45,7 @@ export const marketingHomeContent = {
         subtitle: "Strategy, content, and campaigns built to grow your brand",
         cta: "Get Started",
         href: "/pricing",
-        image:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+        image: siteImages.hero.slide1,
         alt: "Marketing analytics dashboard",
       },
       {
@@ -54,8 +55,7 @@ export const marketingHomeContent = {
         subtitle: "From SEO to paid ads — results you can measure",
         cta: "View Plans",
         href: "/pricing",
-        image:
-          "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80",
+        image: siteImages.hero.slide2,
         alt: "Marketing team in strategy meeting",
       },
       {
@@ -65,8 +65,7 @@ export const marketingHomeContent = {
         subtitle: "Full-funnel marketing for ambitious businesses",
         cta: "Contact Us",
         href: "/contact",
-        image:
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+        image: siteImages.hero.slide3,
         alt: "Creative marketing workspace",
       },
     ],
@@ -83,8 +82,7 @@ export const marketingHomeContent = {
       subtitle: "Premium SEO & Content Packages",
       cta: "Shop now",
       href: "/pricing",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      image: siteImages.services.seo,
       alt: "SEO and content marketing",
       variant: "large" as const,
     },
@@ -94,8 +92,7 @@ export const marketingHomeContent = {
       subtitle: "Social Media Management",
       cta: "Shop Now",
       href: "/pricing",
-      image:
-        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&q=80",
+      image: siteImages.services.social,
       alt: "Social media marketing",
       variant: "small" as const,
     },
@@ -105,8 +102,7 @@ export const marketingHomeContent = {
       subtitle: "Paid Ads & PPC Essentials",
       cta: "Shop Now",
       href: "/pricing",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      image: siteImages.services.ppc,
       alt: "PPC campaign analytics",
       variant: "small" as const,
     },
@@ -116,8 +112,7 @@ export const marketingHomeContent = {
       subtitle: "Brand Identity & Design",
       cta: "Shop now",
       href: "/pricing",
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
+      image: siteImages.services.branding,
       alt: "Brand design workspace",
       variant: "large" as const,
     },
@@ -142,8 +137,7 @@ export const marketingHomeContent = {
         id: "seo-audit",
         name: "Complete SEO Audit Package",
         price: "$499",
-        image:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+        image: siteImages.services.seo,
         alt: "SEO audit service",
         href: "/pricing",
       },
@@ -151,8 +145,7 @@ export const marketingHomeContent = {
         id: "social-starter",
         name: "Social Media Starter Plan",
         price: "$299/mo",
-        image:
-          "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&q=80",
+        image: siteImages.services.social,
         alt: "Social media management",
         href: "/pricing",
       },
@@ -160,8 +153,7 @@ export const marketingHomeContent = {
         id: "ppc-campaign",
         name: "Google & Meta PPC Campaign",
         price: "$799/mo",
-        image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+        image: siteImages.services.ppc,
         alt: "PPC advertising",
         href: "/pricing",
       },
@@ -169,8 +161,7 @@ export const marketingHomeContent = {
         id: "email-marketing",
         name: "Email Marketing Automation",
         price: "$349/mo",
-        image:
-          "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80",
+        image: siteImages.services.email,
         alt: "Email marketing",
         href: "/pricing",
       },
@@ -178,8 +169,7 @@ export const marketingHomeContent = {
         id: "brand-kit",
         name: "Brand Identity Starter Kit",
         price: "$899",
-        image:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80",
+        image: siteImages.services.branding,
         alt: "Brand identity design",
         href: "/pricing",
       },
@@ -202,8 +192,7 @@ export const marketingHomeContent = {
         id: "content-strategy",
         name: "Content Strategy Blueprint",
         price: "$449",
-        image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+        image: siteImages.services.content,
         alt: "Content strategy",
         href: "/pricing",
       },
@@ -211,8 +200,7 @@ export const marketingHomeContent = {
         id: "influencer",
         name: "Influencer Outreach Package",
         price: "$599/mo",
-        image:
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80",
+        image: siteImages.services.influencer,
         alt: "Influencer marketing",
         href: "/pricing",
       },
@@ -220,8 +208,7 @@ export const marketingHomeContent = {
         id: "video-ads",
         name: "Video Ads Production Kit",
         price: "$1,299",
-        image:
-          "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80",
+        image: siteImages.services.video,
         alt: "Video advertising",
         href: "/pricing",
       },
@@ -229,8 +216,7 @@ export const marketingHomeContent = {
         id: "local-seo",
         name: "Local SEO Domination Plan",
         price: "$399/mo",
-        image:
-          "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&q=80",
+        image: siteImages.services.localSeo,
         alt: "Local SEO",
         href: "/pricing",
       },
@@ -238,8 +224,7 @@ export const marketingHomeContent = {
         id: "analytics",
         name: "Analytics & Reporting Suite",
         price: "$249/mo",
-        image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+        image: siteImages.services.analytics,
         alt: "Marketing analytics",
         href: "/pricing",
       },
@@ -247,8 +232,7 @@ export const marketingHomeContent = {
         id: "landing-pages",
         name: "High-Converting Landing Pages",
         price: "$699",
-        image:
-          "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80",
+        image: siteImages.services.landing,
         alt: "Landing page design",
         href: "/pricing",
       },
@@ -256,8 +240,7 @@ export const marketingHomeContent = {
         id: "crm-setup",
         name: "CRM & Automation Setup",
         price: "$549",
-        image:
-          "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+        image: siteImages.services.crm,
         alt: "CRM automation",
         href: "/pricing",
       },
@@ -265,8 +248,7 @@ export const marketingHomeContent = {
         id: "reputation",
         name: "Online Reputation Management",
         price: "$349/mo",
-        image:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80",
+        image: siteImages.services.reputation,
         alt: "Reputation management",
         href: "/pricing",
       },
@@ -329,32 +311,28 @@ export const marketingHomeContent = {
       {
         id: "seo",
         label: "SEO",
-        image:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80",
+        image: siteImages.services.seo,
         alt: "SEO services",
         href: "/pricing",
       },
       {
         id: "social",
         label: "Social Media",
-        image:
-          "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&q=80",
+        image: siteImages.services.social,
         alt: "Social media",
         href: "/pricing",
       },
       {
         id: "ppc",
         label: "Paid Ads",
-        image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80",
+        image: siteImages.services.ppc,
         alt: "Paid advertising",
         href: "/pricing",
       },
       {
         id: "branding",
         label: "Branding",
-        image:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=80",
+        image: siteImages.services.branding,
         alt: "Branding",
         href: "/pricing",
       },

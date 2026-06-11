@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 const base =
-  "inline-flex items-center justify-center rounded-none px-8 py-3 text-sm font-semibold uppercase tracking-wide transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary font-[family-name:var(--font-lato)]";
+  "inline-flex items-center justify-center rounded-none px-8 py-3 text-sm font-semibold uppercase tracking-wide transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary font-[family-name:var(--font-body)]";
 
 const variants = {
   primary:

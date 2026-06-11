@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { siteImages } from "@/config/images";
 import { homeContent } from "@/data/site";
 
 export function OperationsVideoSection() {
@@ -23,7 +24,7 @@ export function OperationsVideoSection() {
             </video>
           ) : (
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80"
+              src={siteImages.sections.operations}
               alt="Team collaboration"
               width={1200}
               height={675}

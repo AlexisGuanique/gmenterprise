@@ -1,3 +1,4 @@
+import { siteImages } from "@/config/images";
 import { siteConfig } from "@/config/site.config";
 import { themeColors } from "@/config/theme.config";
 
@@ -26,13 +27,12 @@ export const colors = {
 } as const;
 
 export const fonts = {
-  body: "var(--font-lato), Lato, sans-serif",
-  heading: "var(--font-poppins), Poppins, sans-serif",
-  accent: "var(--font-sora), Sora, sans-serif",
+  body: 'var(--font-body), "Plus Jakarta Sans", sans-serif',
+  heading: 'var(--font-heading), "Instrument Serif", Georgia, serif',
+  accent: 'var(--font-body), "Plus Jakarta Sans", sans-serif',
 } as const;
 
 export const images = {
   logo: siteConfig.logo.src,
-  heroBg:
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80",
+  heroBg: siteImages.hero.bg,
 } as const;

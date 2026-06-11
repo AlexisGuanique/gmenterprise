@@ -42,8 +42,8 @@
   --color-primary-bright: var(--primary-bright);
   --color-text-highlight: var(--text-highlight);
   --color-gray-dark: var(--brz-gray-dark);
-  --font-sans: var(--font-lato);
-  --font-heading: var(--font-poppins);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
 }
 
 html {
@@ -53,7 +53,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
 }
 
 h1,
@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
 }
 
 .eyebrow {
@@ -71,7 +71,7 @@ h6 {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--brz-green);
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
 }
 
 .section-padding {
@@ -258,7 +258,7 @@ h6 {
   justify-content: center;
   overflow: hidden;
   padding: 0.8rem 1.75rem;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -399,7 +399,7 @@ h6 {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
@@ -897,7 +897,7 @@ h6 {
 }
 
 .about-experience__title {
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: 600;
   line-height: 1.2;
@@ -949,7 +949,7 @@ h6 {
 
 .about-experience__card-title {
   margin-top: 1rem;
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.35;
@@ -1010,7 +1010,7 @@ h6 {
 }
 
 .about-full-service__title {
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 600;
   line-height: 1.2;
@@ -1030,7 +1030,7 @@ h6 {
   justify-content: center;
   margin-top: 1.75rem;
   padding: 0.9rem 2.25rem;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -1116,7 +1116,7 @@ h6 {
 
 .contact-offices__title {
   margin: 0;
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 600;
   color: var(--brz-green);
@@ -1171,7 +1171,7 @@ h6 {
 
 .contact-office-card__city {
   margin: 0;
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--brz-green);
@@ -1221,7 +1221,7 @@ h6 {
 
 .contact-form-section__title {
   margin: 0;
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.375rem, 3vw, 1.75rem);
   font-weight: 600;
   color: var(--brz-green);
@@ -1271,7 +1271,7 @@ h6 {
   align-self: flex-start;
   margin-top: 0.5rem;
   padding: 0.9rem 2.5rem;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1361,7 +1361,7 @@ h6 {
 
 .blog-section__heading {
   text-align: center;
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 600;
   line-height: 1.25;
@@ -1426,7 +1426,7 @@ h6 {
 .blog-card__caption {
   margin: 1.25rem 0 0;
   flex: 1;
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 600;
   line-height: 1.45;
@@ -1436,7 +1436,7 @@ h6 {
 .blog-card__coming-soon {
   display: inline-block;
   margin-top: 1rem;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: 0.9375rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1464,7 +1464,7 @@ h6 {
 
 .faq-section__title {
   text-align: center;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 400;
   line-height: 1.3;
@@ -1505,7 +1505,7 @@ h6 {
 
 .faq-section__question {
   flex: 1;
-  font-family: var(--font-lato), "Lato", sans-serif;
+  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
   font-size: clamp(0.9375rem, 2vw, 1.0625rem);
   font-weight: 700;
   line-height: 1.4;
@@ -2013,7 +2013,7 @@ h6 {
 }
 
 .cookie-banner__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1rem;
   font-weight: 600;
   color: var(--brz-green);
@@ -2072,7 +2072,7 @@ h6 {
 
 /* Pricing page */
 .pricing-intro__subtitle {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 600;
   color: var(--primary);
@@ -2145,7 +2145,7 @@ h6 {
 }
 
 .pricing-card__name {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1.375rem;
   font-weight: 700;
   color: var(--primary);
@@ -2158,7 +2158,7 @@ h6 {
 }
 
 .pricing-card__price {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -2219,7 +2219,7 @@ h6 {
 }
 
 .pricing-addons__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   color: var(--primary);
@@ -2286,7 +2286,7 @@ h6 {
 }
 
 .pricing-policies__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--brz-white);
@@ -2536,7 +2536,7 @@ body {
 
 .hero-carousel__title {
   margin-top: 0.75rem;
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.75rem, 5vw, 3rem);
   font-weight: 700;
   line-height: 1.15;
@@ -2728,7 +2728,7 @@ body {
 }
 
 .promo-banner__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 700;
   color: var(--brz-white);
@@ -2760,7 +2760,7 @@ body {
 
 .top-brands__title {
   text-align: center;
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -2793,7 +2793,7 @@ body {
   height: 3.5rem;
   border-radius: 9999px;
   background: var(--brz-gray-light);
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--brz-green);
@@ -2810,7 +2810,7 @@ body {
 .new-arrivals__title,
 .service-categories__title {
   text-align: center;
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   font-weight: 700;
   color: var(--brz-black);
@@ -2873,7 +2873,7 @@ body {
 }
 
 .service-card__name {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.4;
@@ -3029,7 +3029,7 @@ body {
 }
 
 .home-about__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   font-weight: 700;
   color: var(--brz-black);
@@ -3098,7 +3098,7 @@ body {
 }
 
 .features-bar__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 0.9375rem;
   font-weight: 700;
   color: var(--brz-black);
@@ -3114,7 +3114,7 @@ body {
 /* Testimonials */
 .testimonials__title {
   text-align: center;
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   font-weight: 700;
   color: var(--brz-black);
@@ -3237,7 +3237,7 @@ body {
   position: relative;
   z-index: 1;
   padding: 1rem;
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--brz-white);
@@ -3250,7 +3250,7 @@ body {
 }
 
 .newsletter__title {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   font-weight: 700;
 }
@@ -3332,7 +3332,7 @@ body {
 }
 
 .store-footer__heading {
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3681,7 +3681,7 @@ body {
 
 .inquiry-banner__name {
   margin-top: 0.35rem;
-  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-family: var(--font-heading), "Instrument Serif", Georgia, serif;
   font-size: 1.375rem;
   font-weight: 700;
   color: var(--brz-green);

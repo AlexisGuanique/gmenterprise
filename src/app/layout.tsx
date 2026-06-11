@@ -1,25 +1,19 @@
 import type { Metadata } from "next";
-import { Lato, Poppins, Sora } from "next/font/google";
+import { Instrument_Serif, Plus_Jakarta_Sans } from "next/font/google";
 import { siteConfig } from "@/config/site.config";
 import { getActiveThemeVariables } from "@/config/theme.config";
 import "./globals.css";
 
-const lato = Lato({
-  variable: "--font-lato",
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
-});
-
-const poppins = Poppins({
-  variable: "--font-poppins",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const sora = Sora({
-  variable: "--font-sora",
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${lato.variable} ${poppins.variable} ${sora.variable} h-full`}
+      className={`${plusJakarta.variable} ${instrumentSerif.variable} h-full`}
       style={themeVariables}
     >
       <body className="min-h-full flex flex-col antialiased">{children}</body>

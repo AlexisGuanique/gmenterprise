@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none" role="img" aria-label="GM Enterprise">
-  <rect width="240" height="56" rx="6" fill="#111111"/>
-  <text x="20" y="36" fill="#FFB800" font-family="Arial, sans-serif" font-size="20" font-weight="700">GM ENTERPRISE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" fill="none" role="img" aria-label="GM Enterprise">
+  <rect width="280" height="56" rx="8" fill="#0C2340"/>
+  <rect x="12" y="10" width="36" height="36" rx="8" fill="#14B8A6"/>
+  <text x="58" y="36" fill="#FAFBFC" font-family="Georgia, serif" font-size="22" font-weight="700">GM Enterprise</text>
+  <rect x="210" y="22" width="58" height="4" rx="2" fill="#C9A227"/>
 </svg>
