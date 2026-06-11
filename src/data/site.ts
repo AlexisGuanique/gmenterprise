@@ -202,8 +202,8 @@ export const aboutContent = {
     ] satisfies AboutStatCircle[],
   },
   story: {
-    logo: "/images/logo.svg",
-    logoAlt: "Your Brand logo",
+    logo: "/images/logo.jpg",
+    logoAlt: "GM Enterprise LLC logo",
     items: [
       "We were founded with a clear mission: help business owners reclaim time by automating complex processes and delivering structured growth systems.",
       "Our brand represents innovation, clarity, and long-term partnership with every client we serve.",

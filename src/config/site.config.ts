@@ -5,7 +5,7 @@ import type { Locale } from "@/lib/locales";
  * Edita este archivo con los datos de la empresa cliente.
  */
 export const siteConfig = {
-  brand: "GM Enterprise",
+  brand: "GM Enterprise LLC",
   tagline: "Elite Digital Marketing Solutions",
   description:
     "Full-service digital marketing agency — SEO, social media, paid ads, branding, and growth strategies for ambitious brands.",
@@ -53,9 +53,9 @@ export const siteConfig = {
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
 
   logo: {
-    src: "/images/logo.svg",
-    width: 176,
-    height: 56,
+    src: "/images/logo.jpg",
+    width: 205,
+    height: 112,
   },
 
   social: {

@@ -3,7 +3,7 @@
  * sin tocar los datos de contenido.
  */
 export const siteImages = {
-  logo: "/images/logo.svg",
+  logo: "/images/logo.jpg",
 
   hero: {
     slide1: "/images/hero/slide-1.svg",
