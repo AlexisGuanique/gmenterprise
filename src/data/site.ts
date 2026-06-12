@@ -1,5 +1,6 @@
 import type { Locale } from "@/lib/locales";
 import { siteImages } from "@/config/images";
+import { siteConfig } from "@/config/site.config";
 
 export { siteConfig } from "@/config/site.config";
 export { getNav } from "@/config/navigation";
@@ -253,13 +254,12 @@ export const aboutContent = {
 
 export const offices: Office[] = [
   {
-    city: "Orlando",
+    city: "Austin",
     country: "USA",
-    email: "hello@yourbrand.com",
-    phone: "+1 (000) 000-0000",
-    address: "123 Main Street, Suite 100, Orlando, FL 32822, United States",
-    mapEmbedUrl:
-      "https://www.google.com/maps?q=Orlando,+FL&output=embed",
+    email: siteConfig.email,
+    phone: siteConfig.phone,
+    address: `${siteConfig.address.street}, ${siteConfig.address.suite}, ${siteConfig.address.country}`,
+    mapEmbedUrl: siteConfig.address.mapEmbedUrl,
   },
 ];
 
