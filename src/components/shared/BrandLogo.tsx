@@ -9,7 +9,7 @@ type BrandLogoProps = {
 export function BrandLogo({ className = "", priority = false }: BrandLogoProps) {
   return (
     <span
-      className={`relative block h-14 w-[8rem] shrink-0 sm:h-16 sm:w-[9.25rem] lg:h-[4.5rem] lg:w-[10.5rem] ${className}`}
+      className={`relative block h-16 w-[9.5rem] shrink-0 sm:h-[4.75rem] sm:w-[11rem] lg:h-[5.25rem] lg:w-[12.5rem] ${className}`}
     >
       <Image
         src={siteConfig.logo.src}
@@ -17,7 +17,7 @@ export function BrandLogo({ className = "", priority = false }: BrandLogoProps) 
         fill
         className="object-contain object-left"
         priority={priority}
-        sizes="(max-width: 640px) 128px, (max-width: 1024px) 148px, 168px"
+        sizes="(max-width: 640px) 152px, (max-width: 1024px) 176px, 200px"
       />
     </span>
   );

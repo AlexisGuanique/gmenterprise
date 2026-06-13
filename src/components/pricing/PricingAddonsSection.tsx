@@ -9,7 +9,10 @@ export function PricingAddonsSection() {
         <h2 className="pricing-addons__title">{addons.title}</h2>
         <div className="pricing-addons__grid">
           {addons.items.map((addon) => (
-            <article key={addon.name} className="pricing-addon">
+            <article
+              key={addon.name}
+              className="pricing-addon anim-card-shine anim-card-lift"
+            >
               <div className="pricing-addon__header">
                 <h3 className="pricing-addon__name">{addon.name}</h3>
                 <p className="pricing-addon__price">{addon.price}</p>

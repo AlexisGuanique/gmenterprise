@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NewArrivalsSection } from "@/components/home/MarketingServicesSections";
 import { PageHero } from "@/components/shared/PageHero";
 import { PricingAddonsSection } from "@/components/pricing/PricingAddonsSection";
 import { PricingFAQSection } from "@/components/pricing/PricingFAQSection";
@@ -22,6 +23,7 @@ export default async function PricingPage({ params }: PageProps) {
     <>
       <PageHero locale={typedLocale} content={pageHeroes.pricing} />
       <PricingHeroIntro />
+      <NewArrivalsSection locale={typedLocale} />
       <PricingPlansGrid locale={typedLocale} />
       <PricingAddonsSection />
       <PricingPoliciesSection locale={typedLocale} />

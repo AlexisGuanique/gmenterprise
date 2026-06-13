@@ -15,40 +15,46 @@ export function PricingPlanCard({ plan, ctaHref }: PricingPlanCardProps) {
         <span className="pricing-card__badge">{plan.badge}</span>
       ) : null}
 
-      <h3 className="pricing-card__name">{plan.name}</h3>
+      <div className="pricing-card__content">
+        <h3 className="pricing-card__name">{plan.name}</h3>
 
-      <p className="pricing-card__desc">{plan.description}</p>
+        <p className="pricing-card__desc">{plan.description}</p>
 
-      <div className="pricing-card__prices">
-        {plan.setupPrice ? (
-          <p className="pricing-card__price">{plan.setupPrice}</p>
+        <div className="pricing-card__prices">
+          {plan.setupPrice ? (
+            <p className="pricing-card__price">{plan.setupPrice}</p>
+          ) : null}
+          {plan.monthlyPrice ? (
+            <p className="pricing-card__price pricing-card__price--monthly">
+              {plan.monthlyPrice}
+            </p>
+          ) : null}
+          <p className="pricing-card__price-label">{plan.priceLabel}</p>
+          <p className="pricing-card__billing">{plan.billingNote}</p>
+        </div>
+
+        {plan.features.length > 0 ? (
+          <ul className="pricing-card__features">
+            {plan.features.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
         ) : null}
-        {plan.monthlyPrice ? (
-          <p className="pricing-card__price pricing-card__price--monthly">
-            {plan.monthlyPrice}
-          </p>
-        ) : null}
-        <p className="pricing-card__price-label">{plan.priceLabel}</p>
-        <p className="pricing-card__billing">{plan.billingNote}</p>
       </div>
 
-      <ul className="pricing-card__features">
-        {plan.features.map((feature) => (
-          <li key={feature}>{feature}</li>
-        ))}
-      </ul>
+      <div className="pricing-card__footer">
+        <Button
+          href={plan.cta.href ?? ctaHref}
+          variant={plan.highlighted ? "gold" : "primary"}
+          className="pricing-card__cta w-full"
+        >
+          {plan.cta.label}
+        </Button>
 
-      <Button
-        href={plan.cta.href ?? ctaHref}
-        variant={plan.highlighted ? "gold" : "primary"}
-        className="pricing-card__cta w-full"
-      >
-        {plan.cta.label}
-      </Button>
-
-      {plan.subscriptionNotice ? (
-        <p className="pricing-card__notice">{plan.subscriptionNotice}</p>
-      ) : null}
+        <p className="pricing-card__notice">
+          {plan.subscriptionNotice ?? ""}
+        </p>
+      </div>
     </article>
   );
 }

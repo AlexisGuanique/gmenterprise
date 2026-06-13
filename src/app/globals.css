@@ -16,6 +16,7 @@
   --primary-rgb: 27, 122, 94;
   --accent-rgb: 247, 201, 72;
   --site-header-height: 5.25rem;
+  --btn-radius: 0.5rem;
   --illus-surface: #d4e4f2;
   --illus-surface-deep: #c5d9ea;
   --illus-panel: var(--brz-green);
@@ -1057,7 +1058,7 @@ h6 {
     color-mix(in srgb, var(--brz-gold) 75%, var(--primary)) 100%
   );
   border: 2px solid rgba(255, 255, 255, 0.35);
-  border-radius: 12px;
+  border-radius: var(--btn-radius);
   box-shadow:
     0 6px 20px rgba(var(--primary-rgb), 0.22),
     0 0 0 1px rgba(var(--accent-rgb), 0.5),
@@ -1292,7 +1293,7 @@ h6 {
   color: #fff;
   background: var(--brz-green);
   border: 2px solid var(--brz-green);
-  border-radius: 8px;
+  border-radius: var(--btn-radius);
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
 }
@@ -2117,6 +2118,17 @@ h6 {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.pricing-plans__grid > .aos {
+  display: flex;
+  height: 100%;
+}
+
+.pricing-plans__grid > .aos > .pricing-card {
+  flex: 1;
+  width: 100%;
 }
 
 .shop-section__header {
@@ -2161,10 +2173,24 @@ h6 {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
   border: 1px solid var(--border);
   background: var(--surface-elevated);
   padding: 1.75rem;
   transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.pricing-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.pricing-card__footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  padding-top: 1.5rem;
 }
 
 .pricing-card:hover {
@@ -2172,9 +2198,8 @@ h6 {
 }
 
 .pricing-card--highlighted {
-  border-color: var(--accent);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
-  transform: scale(1.02);
+  border-color: #ffb800;
+  box-shadow: 0 8px 28px rgba(255, 184, 0, 0.22);
 }
 
 .pricing-card__badge {
@@ -2183,13 +2208,14 @@ h6 {
   right: 1.25rem;
   z-index: 1;
   border-radius: 9999px;
-  background: var(--accent);
+  background: #ffb800;
   padding: 0.25rem 0.875rem;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--brz-white);
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(255, 184, 0, 0.45);
 }
 
 .pricing-card__name {
@@ -2256,10 +2282,11 @@ h6 {
 }
 
 .pricing-card__cta {
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 
 .pricing-card__notice {
+  min-height: 4.75rem;
   margin-top: 1rem;
   font-size: 0.6875rem;
   line-height: 1.5;
@@ -2287,9 +2314,24 @@ h6 {
 }
 
 .pricing-addon {
+  position: relative;
   border: 1px solid var(--border);
   background: var(--surface);
   padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition:
+    border-color 0.3s ease,
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+.pricing-addon:hover {
+  border-color: rgba(var(--accent-rgb), 0.35);
+}
+
+.pricing-addon:hover .pricing-addon__price {
+  color: var(--primary-bright);
 }
 
 .pricing-addon__header {
@@ -2308,6 +2350,7 @@ h6 {
 .pricing-addon__price {
   font-weight: 600;
   color: var(--text-highlight);
+  transition: color 0.25s ease;
 }
 
 .pricing-addon__desc {
@@ -2386,7 +2429,7 @@ h6 {
 }
 
 .store-header__inner {
-  min-height: 5.25rem;
+  min-height: 5.75rem;
 }
 
 .store-header__logo {
@@ -2410,7 +2453,7 @@ h6 {
   text-decoration: none;
   color: var(--brz-white);
   background: var(--brz-green);
-  border-radius: 4px;
+  border-radius: var(--btn-radius);
   transition: background 0.2s, transform 0.2s;
 }
 
@@ -2427,7 +2470,7 @@ h6 {
   height: 2.5rem;
   font-size: 1.25rem;
   border: 1px solid var(--brz-gray-border);
-  border-radius: 4px;
+  border-radius: var(--btn-radius);
   background: transparent;
   cursor: pointer;
 }
@@ -2614,15 +2657,16 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--brz-black);
+  color: var(--brz-white);
   background: var(--brz-gold);
-  border-radius: 4px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: var(--btn-radius);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .hero-carousel__cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 184, 0, 0.35);
+  background: #006aad;
+  box-shadow: 0 8px 20px rgba(0, 120, 193, 0.35);
 }
 
 .hero-carousel__dots {
@@ -3351,16 +3395,17 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--brz-black);
+  color: var(--brz-white);
   background: var(--brz-gold);
   border: none;
-  border-radius: 4px;
+  border-radius: var(--btn-radius);
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background 0.2s;
 }
 
 .newsletter__btn:hover {
   transform: translateY(-1px);
+  background: #006aad;
 }
 
 .newsletter__success {
@@ -3773,7 +3818,7 @@ body {
   position: relative;
   z-index: 0;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: var(--btn-radius);
   padding: 0.35rem 0.75rem;
 }
 
@@ -3786,7 +3831,7 @@ body {
   transform-origin: left;
   transition: transform 0.3s ease;
   z-index: -1;
-  border-radius: 2px;
+  border-radius: var(--btn-radius);
 }
 
 .service-card:hover .service-card__cta--buy {

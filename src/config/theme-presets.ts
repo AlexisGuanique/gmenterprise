@@ -137,9 +137,9 @@ export const themePresets = {
   gmenterprise: {
     id: "gmenterprise",
     label: "GM Enterprise",
-    description: "Azul marino profundo con teal y dorado refinado",
+    description: "Azul corporativo con acentos teal — paleta del logo GM Enterprise",
     colors: {
-      gold: "#C9A227",
+      gold: "#0078C1",
       primaryBright: "#14B8A6",
       primaryDark: "#0C2340",
       white: "#FAFBFC",
@@ -150,7 +150,7 @@ export const themePresets = {
       grayDark: "#334155",
       heroOverlay: "rgba(12, 35, 64, 0.62)",
       primaryRgb: "12, 35, 64",
-      accentRgb: "201, 162, 39",
+      accentRgb: "0, 120, 193",
     },
   },
 } as const satisfies Record<ThemePresetId, ThemePreset>;
