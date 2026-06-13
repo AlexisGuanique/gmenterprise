@@ -25,16 +25,18 @@ export function AboutPageHero() {
             <ul className="about-hero__stats animate-fade-up [animation-delay:0.18s]">
               {intro.stats.map((stat) => (
                 <li key={stat.alt} className="about-hero__stat">
-                  <div className="about-hero__stat-circle">
+                  <div className="about-hero__stat-card">
                     <div className="about-hero__stat-media">
                       <Image
                         src={stat.image}
-                        alt={stat.alt}
+                        alt=""
+                        aria-hidden
                         fill
                         className="about-hero__stat-image"
                         sizes="(max-width: 640px) 40vw, 200px"
                       />
                     </div>
+                    <p className="about-hero__stat-label">{stat.alt}</p>
                   </div>
                 </li>
               ))}

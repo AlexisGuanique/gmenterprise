@@ -28,7 +28,7 @@ export function ElevateSection() {
               src={elevate.image.src}
               alt={elevate.image.alt}
               fill
-              className="object-cover"
+              className="object-contain p-4"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
