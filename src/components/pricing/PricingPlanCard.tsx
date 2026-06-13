@@ -17,6 +17,8 @@ export function PricingPlanCard({ plan, ctaHref }: PricingPlanCardProps) {
 
       <h3 className="pricing-card__name">{plan.name}</h3>
 
+      <p className="pricing-card__desc">{plan.description}</p>
+
       <div className="pricing-card__prices">
         {plan.setupPrice ? (
           <p className="pricing-card__price">{plan.setupPrice}</p>

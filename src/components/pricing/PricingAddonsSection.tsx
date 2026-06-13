@@ -4,7 +4,7 @@ export function PricingAddonsSection() {
   const { addons } = pricingContent;
 
   return (
-    <section className="pricing-addons section-padding bg-white">
+    <section id="extras" className="pricing-addons section-padding bg-white scroll-mt-28">
       <div className="pricing-addons__inner mx-auto max-w-7xl">
         <h2 className="pricing-addons__title">{addons.title}</h2>
         <div className="pricing-addons__grid">

@@ -23,11 +23,11 @@ const headerNavDefinitions = [
 
 /** Categorías de servicios en el footer */
 export const footerServiceCategories: FooterLink[] = [
-  { label: "SEO", path: "/pricing" },
-  { label: "Social Media", path: "/pricing" },
-  { label: "Paid Ads", path: "/pricing" },
-  { label: "Branding", path: "/pricing" },
-  { label: "Email Marketing", path: "/pricing" },
+  { label: "SEO", path: "/pricing#addons" },
+  { label: "Social Media", path: "/pricing#addons" },
+  { label: "Paid Ads", path: "/pricing#addons" },
+  { label: "Branding", path: "/pricing#addons" },
+  { label: "Email Marketing", path: "/pricing#addons" },
 ];
 
 /** Enlaces rápidos del footer */
