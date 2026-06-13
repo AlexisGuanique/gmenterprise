@@ -1,6 +1,10 @@
 /**
- * Imágenes locales del sitio — reemplaza archivos en public/images/
- * sin tocar los datos de contenido.
+ * Imágenes del sitio — archivos en public/images/
+ *
+ * Ilustraciones: unDraw (https://undraw.co/illustrations)
+ * Paleta ilustraciones: azul #0078C1 · navy #0C2340 · gold #C9A227
+ * Superficie cards: #D4E4F2 · fills claros SVG: #C5D9EA / #B0C4D8
+ * Regenerar: npm run images:undraw
  */
 export const siteImages = {
   logo: "/images/logo.jpg",

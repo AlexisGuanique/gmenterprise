@@ -13,7 +13,7 @@ export function PartnerSection() {
               src={partner.image.src}
               alt={partner.image.alt}
               fill
-              className="object-cover"
+              className="object-contain p-4"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

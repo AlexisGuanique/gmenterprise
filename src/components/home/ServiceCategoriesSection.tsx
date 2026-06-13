@@ -24,13 +24,15 @@ export function ServiceCategoriesSection({ locale }: ServiceCategoriesSectionPro
                   href={buildInquiryContactUrl(locale, { service: category.label })}
                   className="service-category-card service-category-card--animated"
                 >
-                  <Image
-                    src={category.image}
-                    alt={category.alt}
-                    fill
-                    className="service-category-card__image"
-                    sizes="(max-width: 640px) 50vw, 25vw"
-                  />
+                  <div className="service-category-card__media">
+                    <Image
+                      src={category.image}
+                      alt={category.alt}
+                      fill
+                      className="service-category-card__image"
+                      sizes="(max-width: 640px) 50vw, 25vw"
+                    />
+                  </div>
                   <span className="service-category-card__label">{category.label}</span>
                 </Link>
               </AnimateOnScroll>
