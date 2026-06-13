@@ -1,5 +1,7 @@
 import type { Locale } from "@/lib/locales";
 import { localePath } from "@/lib/locales";
+import { getSquareCheckoutUrl } from "@/lib/square";
+import type { PricingPlan } from "@/data/pricing";
 
 export type InquiryParams = {
   plan?: string;
@@ -35,4 +37,15 @@ export function getPlanDisplayPrice(plan: {
   if (plan.monthlyPrice) return plan.monthlyPrice;
   if (plan.setupPrice) return plan.setupPrice;
   return "";
+}
+
+export function getPlanCheckoutUrl(locale: Locale, plan: PricingPlan): string {
+  const squareUrl = getSquareCheckoutUrl(plan.id);
+  if (squareUrl) return squareUrl;
+
+  return buildInquiryContactUrl(locale, {
+    plan: plan.name,
+    planId: plan.id,
+    price: getPlanDisplayPrice(plan),
+  });
 }

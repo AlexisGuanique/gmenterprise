@@ -11,3 +11,8 @@ export function localePath(locale: Locale, path = ""): string {
   if (!path || path === "/") return base;
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/** Anchor to the purchasable plans catalog on the pricing page. */
+export function pricingAddonsPath(locale: Locale): string {
+  return localePath(locale, "/pricing#addons");
+}

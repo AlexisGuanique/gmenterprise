@@ -10,8 +10,8 @@ export const siteConfig = {
   description:
     "Full-service digital marketing agency — SEO, social media, paid ads, branding, and growth strategies for ambitious brands.",
 
-  email: "hello@gmenterprise.com",
-  supportEmail: "support@gmenterprise.com",
+  email: "info@gmenterprisetx.com",
+  supportEmail: "info@gmenterprisetx.com",
   phone: "+1 (512) 717-2375",
 
   address: {
