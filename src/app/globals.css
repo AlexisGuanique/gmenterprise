@@ -2181,6 +2181,7 @@ h6 {
   position: absolute;
   top: -0.75rem;
   right: 1.25rem;
+  z-index: 1;
   border-radius: 9999px;
   background: var(--accent);
   padding: 0.25rem 0.875rem;
@@ -3725,6 +3726,10 @@ body {
 
 .anim-card-shine:hover::after {
   transform: translateX(120%);
+}
+
+.pricing-card.anim-card-shine {
+  overflow: visible;
 }
 
 .hero-carousel__anim-in {
