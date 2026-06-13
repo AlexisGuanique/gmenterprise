@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import type { Locale } from "@/lib/locales";
-import { buildInquiryContactUrl } from "@/lib/inquiry";
+import { pricingAddonsPath } from "@/lib/locales";
 import type { MarketingService } from "@/data/marketing-home";
 import { marketingHomeContent } from "@/data/marketing-home";
 import { AnimateOnScroll } from "@/components/shared/AnimateOnScroll";
@@ -15,10 +15,7 @@ type ServiceCardProps = {
 };
 
 function ServiceCard({ service, locale }: ServiceCardProps) {
-  const href = buildInquiryContactUrl(locale, {
-    service: service.name,
-    price: service.price,
-  });
+  const href = pricingAddonsPath(locale);
 
   return (
     <article className="service-card anim-card-shine">
@@ -37,7 +34,7 @@ function ServiceCard({ service, locale }: ServiceCardProps) {
         </h3>
         <p className="service-card__price">{service.price}</p>
         <Link href={href} className="service-card__cta service-card__cta--buy">
-          Get This Plan
+          View Details
         </Link>
       </div>
     </article>
