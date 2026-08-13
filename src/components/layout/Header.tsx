@@ -35,6 +35,7 @@ export function Header({ locale }: HeaderProps) {
                 label={item.label}
                 isActive={pathname === item.href}
                 variant="store"
+                accent={item.accent}
               />
             ))}
           </nav>
@@ -66,6 +67,7 @@ export function Header({ locale }: HeaderProps) {
                   label={item.label}
                   isActive={pathname === item.href}
                   variant="store"
+                  accent={item.accent}
                   onClick={() => setOpen(false)}
                 />
               ))}

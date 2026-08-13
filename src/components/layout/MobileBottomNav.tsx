@@ -18,7 +18,7 @@ export function MobileBottomNav({ locale }: MobileBottomNavProps) {
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`mobile-bottom-nav__link ${pathname === item.href ? "is-active" : ""}`}
+              className={`mobile-bottom-nav__link ${pathname === item.href ? "is-active" : ""} ${item.accent === "academy" ? "mobile-bottom-nav__link--academy" : ""}`}
             >
               {item.label}
             </Link>

@@ -1,6 +1,7 @@
 import type { Locale } from "@/lib/locales";
 import { localePath } from "@/lib/locales";
 import { getSquareCheckoutUrl } from "@/lib/square";
+import type { AcademyCourse } from "@/data/academy";
 import type { PricingPlan } from "@/data/pricing";
 
 export type InquiryParams = {
@@ -47,5 +48,20 @@ export function getPlanCheckoutUrl(locale: Locale, plan: PricingPlan): string {
     plan: plan.name,
     planId: plan.id,
     price: getPlanDisplayPrice(plan),
+  });
+}
+
+export function getCourseCheckoutUrl(
+  locale: Locale,
+  course: AcademyCourse,
+): string {
+  const squareUrl = getSquareCheckoutUrl(course.id);
+  if (squareUrl) return squareUrl;
+
+  return buildInquiryContactUrl(locale, {
+    plan: course.name,
+    planId: course.id,
+    price: course.price,
+    service: "Academy",
   });
 }

@@ -6,6 +6,7 @@ export type NavItem = {
   label: string;
   href: string;
   hidden?: boolean;
+  accent?: "academy";
 };
 
 export type FooterLink = {
@@ -16,8 +17,9 @@ export type FooterLink = {
 /** Enlaces del header — estilo Kans Enterprises */
 const headerNavDefinitions = [
   { label: "Home", path: "" },
-  { label: "About Us", path: "/about" },
   { label: "Pricing", path: "/pricing" },
+  { label: "Academy", path: "/academy", accent: "academy" as const },
+  { label: "About Us", path: "/about" },
   { label: "Contact Us", path: "/contact" },
 ] as const;
 
@@ -32,10 +34,11 @@ export const footerServiceCategories: FooterLink[] = [
 
 /** Enlaces rápidos del footer */
 export const footerQuickLinks: FooterLink[] = [
-  { label: "Home", path: "" },
-  { label: "About", path: "/about" },
+  { label: "Home", path: "" },  
   { label: "Pricing", path: "/pricing" },
-  { label: "Contact", path: "/contact" },
+  { label: "Academy", path: "/academy" },
+  { label: "About Us", path: "/about" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 /** Enlaces legales del footer — requeridos para cumplimiento Square */
@@ -51,6 +54,7 @@ export function getNav(locale: Locale): NavItem[] {
     label: item.label,
     href: localePath(locale, item.path),
     hidden: false,
+    accent: "accent" in item ? item.accent : undefined,
   }));
 }
 

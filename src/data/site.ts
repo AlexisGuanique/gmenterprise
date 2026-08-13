@@ -66,6 +66,15 @@ export const pageHeroes = {
     title: { white: "Pricing", gold: "" },
     subtitle: "Transparent plans for every stage of growth.",
   },
+  academy: {
+    eyebrow: { white: "GM ", gold: "ACADEMY" },
+    title: {
+      white: "Learn. Lead. ",
+      gold: "Master your craft",
+    },
+    subtitle:
+      "Courses and programs in business, media, branding, and leadership — priced clearly in USD.",
+  },
   privacy: {
     title: { white: "Privacy ", gold: "Policy" },
   },

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { Locale } from "@/lib/locales";
 import { localePath } from "@/lib/locales";
 import { siteConfig } from "@/config/site.config";
@@ -17,13 +20,17 @@ const squarePolicyLinks = [
 ] as const;
 
 export function Footer({ locale }: FooterProps) {
+  const pathname = usePathname();
+  const isAcademy = pathname.includes("/academy");
   const legalLinks = getFooterLegalLinks(locale);
   const quickLinks = getFooterQuickLinks(locale);
   const categories = getFooterServiceCategories(locale);
   const phoneHref = siteConfig.phone.replace(/\s/g, "");
 
   return (
-    <footer className="store-footer">
+    <footer
+      className={`store-footer${isAcademy ? " store-footer--academy" : ""}`}
+    >
       <div className="store-footer__inner mx-auto max-w-7xl section-padding">
         <div className="store-footer__grid">
           <div className="store-footer__col">
@@ -94,7 +101,11 @@ export function Footer({ locale }: FooterProps) {
                   All sales are subject to our{" "}
                   {squarePolicyLinks.map((link, index) => (
                     <span key={link.label}>
-                      {index > 0 ? (index === squarePolicyLinks.length - 1 ? ", and " : ", ") : null}
+                      {index > 0
+                        ? index === squarePolicyLinks.length - 1
+                          ? ", and "
+                          : ", "
+                        : null}
                       <Link href={localePath(locale, link.path)}>
                         {link.label}
                       </Link>
